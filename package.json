@@ -1,0 +1,28 @@
+{
+  "name": "rabbitmq-tutorial",
+  "version": "1.0.0",
+  "description": "To run RabbitMQ service in a Docker container, you need to have Docker installed on your machine. You can download Docker from [Docker website](https://www.docker.com/).",
+  "main": "receive.js",
+  "dependencies": {
+    "buffer-more-ints": "^1.0.0",
+    "ms": "^2.1.2",
+    "inherits": "^2.0.4",
+    "debug": "^4.3.4",
+    "amqplib": "^0.10.3",
+    "querystringify": "^2.2.0",
+    "requires-port": "^1.0.0",
+    "string_decoder": "^0.10.31",
+    "readable-stream": "^1.1.14",
+    "url-parse": "^1.5.10",
+    "safe-buffer": "^5.1.2",
+    "core-util-is": "^1.0.3",
+    "isarray": "^0.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "RabbitMQ": "docker run --rm -it --hostname my-rabbit -p 15672:15672 -p 5672:5672 rabbitmq:3-management"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
